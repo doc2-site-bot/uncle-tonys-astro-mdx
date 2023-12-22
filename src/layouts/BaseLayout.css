@@ -56,6 +56,10 @@ header ul {
     list-style: none;
 }
 
+header ul li {
+    display: flex;
+}
+
 header ul li a {
     color: rgb(185 28 28 / 1);
     font-weight: 700;

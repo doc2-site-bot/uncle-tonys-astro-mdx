@@ -86,6 +86,11 @@ const workspace = 'live';
             }
         });
 
+        // Replace image default variant
+        selectAll('img', hast).forEach((el) => {
+            el.properties.src = el.properties.src.replace('.default.', '.600.');
+        })
+
         // Header and Footer are handled in the BaseLayout
         const mainComponents = components.filter((component) => component !== 'web-header' && component !== 'web-footer');
 
