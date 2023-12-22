@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: normal;
+    tab-size: 4;
+}
+
+body {
+    margin: 0;
+    line-height: inherit;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    vertical-align: middle;
+}
+
+header img {
+    height: 115px;
+    width: 115px;
+}
+
+header p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    header p {
+        margin-left: -115px;
+    }
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header ul li a {
+    color: rgb(185 28 28 / 1);
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-decoration: inherit;
+}
+
+main {
+    background-color: rgb(153 27 27 / 1);
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+main h1 {
+    font-weight: 800;
+    font-size: 2.25em;
+    margin-top: 0;
+    margin-bottom: 0.8888889em;
+    line-height: 1.1111111;
+}
+
+main h2 {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    line-height: 1.3333333;
+}
+
+main p {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+main h2 + p {
+    margin-top: 0;
+}
+
+@media (min-width: 1024px) {
+    main h1 {
+        font-size: 2.8em;
+        margin-top: 0;
+        margin-bottom: 0.8571429em;
+        line-height: 1;
+    }
+
+    main h2 {
+        font-size: 1.8em;
+        margin-top: 1.5555556em;
+        margin-bottom: 0.8888889em;
+        line-height: 1.1111111;
+    }
+
+    main p {
+        margin-top: 1.2em;
+        margin-bottom: 1.2em;
+    }
+
+    main h2 + p {
+        margin-top: 0;
+    }
+}
+
+main.menu :is(h1, p) {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main.menu h1 {
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    main.menu {
+        font-size: 1.25rem;
+        line-height: 1.8;
+    }
+
+    main.menu h1 {
+        font-size: 2.8em;
+        line-height: 1;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+
+
+footer {
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer a {
+    color: #000;
+    text-decoration: underline;
+    font-weight: 500;
+}

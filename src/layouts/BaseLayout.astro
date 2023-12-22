@@ -1,0 +1,31 @@
+---
+import './BaseLayout.css';
+import Main from '@components/Main';
+import {Content as Header} from '@fragments/header.mdx';
+import {Content as Footer} from '@fragments/footer.mdx';
+import { path } from '@stores/url';
+
+const { frontmatter, url } = Astro.props;
+
+path.set(url);
+---
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <title>{frontmatter.title}</title>
+    <meta name="description" content={frontmatter.description}/>
+</head>
+<body>
+    <header>
+        <Header/>
+    </header>
+    <Main>
+        <slot />
+    </Main>
+    <footer>
+        <Footer/>
+    </footer>
+</body>
+</html>
